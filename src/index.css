@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(85, 3, 3);
+  height: 100vh;
+}
+
+div.main-container-outer {
+  margin: auto;
+  height: 100vh;
+  max-width: 1000px;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+div.main-container-inner {
+  width: 100%;
+  padding: 15px;
+}
+
+div.tile {
+  width: fit-content;
+  display: inline-block;
+  margin: 4px 8px;
+}
+
+div.tile > div {
+  position: absolute;
+  display: inline-block;
+}
+
+div.tile > p {
+  display: inline-block;
+}
+
+/* TEMP until png are properly transparent */
+div.tile > div > img {
+  opacity: 0.4;
+}
+
+img.tile-height {
+  visibility: hidden;
+  display: inline-block;
+  /* width: 0; */
+}
+
+div.strength {
+  z-index: 1;
+}
+
+div.cooldown {
+  z-index: 2;
+}
+
+div.tile-edit {
+  padding: 15px;
+}
+
+div.tile-properties {
+  display: inline-block;
+  /* border: 1px solid red; */
+  vertical-align: top;
+}
+
+div.tile-property {
+  /* display: inline-block; */
+  /* border: 1px solid red; */
+}
+
+p.prop-button {
+  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 7px;
+  padding-top: 2px;
+  font-variant-caps: all-small-caps;
+  font-size: 1.5em;
+  display: inline-block;
+  cursor: default;
+}
+
+p.prop-button.checked {
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+p.prop-button.inactive {
+  color: #666;
+  border-color: #666;
+}
+
+p.prop-button.active:hover {
+  color: yellow;
+  border-color: yellow;
+  cursor: pointer;
+}
